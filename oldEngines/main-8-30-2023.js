@@ -20,7 +20,7 @@ class GameEngineSettings {
     }
 }
 
-let gameEngineSettings = new GameEngineSettings(8, 16); //55 //890/2
+let gameEngineSettings = new GameEngineSettings(1, 1400/2); //55 //890/2
 // let gameEngineSettings = new GameEngineSettings(8, 16);
 
 let activeCamera = null;
@@ -1124,8 +1124,12 @@ function _line(x1, y1, x2, y2, color, settings) {
 
         if ((x1 === x2) && (y1 === y2)) break;
         let e2 = 2 * err;
-        if (e2 > -dy) { err -= dy; x1 += sx; }
-        if (e2 < dx) { err += dx; y1 += sy; }
+        if (e2 > -dy) {
+            err -= dy; x1 += sx;
+        }
+        if (e2 < dx) {
+            err += dx; y1 += sy;
+        }
     }
 }
 
