@@ -472,7 +472,8 @@ function _tick() {
 
     timer += 1;
 
-    Milo.cls();
+    // Milo.cls();
+    Milo.pSet(10,10,"#ff0000");
 
     sandSim.frame();
 
@@ -500,4 +501,3 @@ function spawnLittleSand() {
 }
 
 Milo.functions(_init, _tick);
-
